@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - The World's Greatest Scholarship In the Universe Scholarship</title>
+    <meta name="description" content="Learn how to get involved with The World's Greatest Scholarship In the Universe Scholarship through donations, volunteering, or applying.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/donation.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">The World's Greatest Scholarship</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="board.html" class="nav-link">Board</a></li>
+                        <li class="nav-item"><a href="scholars.html" class="nav-link">Scholars</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="get-involved.html" class="nav-link active">Get Involved</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li class="mobile-nav-item"><a href="board.html" class="mobile-nav-link">Board</a></li>
+            <li class="mobile-nav-item"><a href="scholars.html" class="mobile-nav-link">Scholars</a></li>
+            <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li class="mobile-nav-item"><a href="get-involved.html" class="mobile-nav-link active">Get Involved</a></li>
+        </ul>
+    </div>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get Involved</h1>
+        </div>
+    </section>
+    
+    <!-- Ways to Get Involved Section -->
+    <section class="section section-ways">
+        <div class="container">
+            <h2 class="section-title">Ways to Get Involved</h2>
+            <p class="section-text">There are many ways to support The World's Greatest Scholarship In the Universe Scholarship and help us continue our mission of supporting passionate, creative, and driven students in Dare County.</p>
+            
+            <div class="ways-grid">
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="way-title">Donate</h3>
+                    <p class="way-text">Your financial contribution helps us provide scholarships to deserving students in Dare County. Every dollar makes a difference in a student's life.</p>
+                    <a href="#donate" class="btn btn-accent">Donate Now</a>
+                </div>
+                
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="way-title">Volunteer</h3>
+                    <p class="way-text">Share your time and talents with our organization. We have various volunteer opportunities available throughout the year.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+                
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="way-title">Apply</h3>
+                    <p class="way-text">Are you a passionate, creative, and driven student in Dare County? Apply for our scholarship during the spring season of the school year.</p>
+                    <a href="#contact" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Donation Section -->
+    <section id="donate" class="section section-donate">
+        <div class="container">
+            <h2 class="section-title">Make a Donation</h2>
+            <p class="section-text">Your generous donation helps us support passionate, creative, and driven students in Dare County. We appreciate your contribution to our mission.</p>
+            
+            <div class="donation-container">
+                <div class="donation-options">
+                    <div class="donation-paypal">
+                        <h3>Donate via PayPal</h3>
+                        <p>Make a secure donation through PayPal using your credit card or PayPal account.</p>
+                        
+                        <div class="paypal-button-container">
+                            <!-- PayPal Donation Button -->
+                            <div id="donate-button-container">
+                                <div id="donate-button"></div>
+                                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                                <script>
+                                PayPal.Donation.Button({
+                                env:'production',
+                                hosted_button_id:'GACU48A5PD5UG',
+                                image: {
+                                src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                                alt:'Donate with PayPal button',
+                                title:'PayPal - The safer, easier way to pay online!',
+                                }
+                                }).render('#donate-button');
+                                </script>
+                            </div>
+                        </div>
+                        
+                        <p class="donation-note">All donations are tax-deductible to the extent allowed by law.</p>
+                    </div>
+                    
+                    <div class="donation-other">
+                        <h3>Other Ways to Donate</h3>
+                        <p>If you prefer to donate by check or have questions about making a donation, please contact us using the form below.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-text">Have questions about our scholarship, want to volunteer, or need more information? Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <div class="contact-container">
+                <form id="contactForm" class="contact-form" action="process-form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dare County, NC</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">The World's Greatest Scholarship</h3>
+                    <p>Dare County, NC</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="board.html">Board</a></li>
+                        <li><a href="scholars.html">Scholars</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> The World's Greatest Scholarship In the Universe Scholarship. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>
